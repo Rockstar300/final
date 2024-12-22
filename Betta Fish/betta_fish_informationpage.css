@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Project 2-4 and 2-5
+   
+   Author:   Paris Jones
+   Date:  12/17/24
+   
+   Filename: betta_fish_homepage.css
+   
+   This file contains the flex styles used in the Betta Fish page.
+
+*/
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.collapse {
+    &:not(.show) {
+        display: none;
+    }
+}
+  
+.collapsing {
+    height: .35s ease;
+    overflow: hidden;
+  
+    &.collapse-horizontal {
+      width: .35s ease;
+      height: auto;
+      
+    }
+}
